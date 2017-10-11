@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>suma</title>
+  </head>
+  <body>
+    <form  action="/suma" method="post">
+      <label>Entero 1:</label>
+      <input type="text" name="txtN1" placeholder="Primer Numero" value="">
+      <br/>
+      <label>Entero 2:</label>
+      <input type="text" name="txtN2" placeholder="Segundo Numero" value="">
+      <br/>
+      <button type="submit" value="Sumar" name="btnSumar">Sumar</button>
+      <button type="reset" value="Cancelar" name="btnCancelar">Cancelar</button>
+    </form>
+    <div>
+      <ul>
+        {{#each resultado}}
+        <li>
+          {{suma}}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+
+  </body>
+</html>
